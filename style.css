@@ -71,3 +71,131 @@ img {
 .clear {
   clear: both;
 }
+
+
+/* La larghezza dello schermo diventa < di 768px */
+
+@media screen and (max-width: 768px) {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .row {
+    width: 100vw;
+    margin: 20px 0;
+  }
+
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 50%;
+    float: left;
+  }
+  #lezioni .row h1,
+  #lezioni .row img,
+  #lezioni .row h3 {
+    padding: 10px 0;
+  }
+
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: 50%;
+  }
+  #steps .row>.right{
+    float:none;
+    margin: auto;
+  }
+  #steps .row h1,
+  #steps .row img,
+  #steps .row h3 {
+    padding: 10px 0;
+  }
+
+  /* BLOCCO PERCHE */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  #why .row>.third {
+    float: none;
+    margin: auto;
+  }
+  #why .row hr {
+    display: none;
+  }
+  #why .row h1,
+  #why .row img,
+  #why .row h3 {
+    padding: 10px 0;
+  }
+  #why .row img {
+    margin-top: 20px;
+  }
+}
+
+
+/* La larghezza dello schermo diventa < di 420px */
+
+@media screen and (max-width: 420px) {
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .row {
+    width: 100vw;
+    margin: 20px 0;
+  }
+
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    float: none;
+  }
+  #lezioni .row h1,
+  #lezioni .row img,
+  #lezioni .row h3 {
+    padding: 10px 0;
+  }
+
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+  #steps .row h1,
+  #steps .row img,
+  #steps .row h3 {
+    padding: 10px 0;
+  }
+
+  /* BLOCCO PERCHE */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin: 0;
+  }
+  #why .row h1,
+  #why .row img,
+  #why .row h3 {
+    padding: 10px 0;
+  }
+  #why .row hr {
+    margin: 10px 0;
+  }
+}
